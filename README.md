@@ -15,10 +15,10 @@ This project simulates real-world tasks a Systems Engineer or DevOps Engineer wo
 
 ## ⚡ Features
 
-✅ Extract ERROR & WARNING logs from server files
-✅ Summarize top error types and HTTP status codes
-✅ Automatic log rotation (alerts.log → alerts.log.1)
-✅ Disk space monitoring with low-space alerts
+- ✅ Extract ERROR & WARNING logs from server files
+- ✅ Summarize top error types and HTTP status codes
+- ✅ Automatic log rotation (alerts.log → alerts.log.1)
+- ✅ Disk space monitoring with low-space alerts
 
 ```
 log-sentinel/
