@@ -4,4 +4,9 @@ import utils
 file = "logs/server.log"
 message = "ERROR"
 
-utils.log_parsing(file, message)
+print("Error Summary:")
+utils.count_occurrences(file)
+print("\n")
+
+print("HTTP Status Codes:")
+utils.cause_code_occurrences(file)

@@ -1,3 +1,4 @@
 # Ignored files
 __pycache__
 .git
+logs/alerts.log
