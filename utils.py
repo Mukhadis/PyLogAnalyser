@@ -11,7 +11,6 @@ def log_parsing(file: str, message: str):
         for line in f:  # Iterate through each line of the file
             if message in line:  # If the message is in the line
                 o.write(line)
-    return count
 
 
 def count_occurrences(file: str):
