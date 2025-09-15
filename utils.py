@@ -11,6 +11,7 @@ def log_parsing(file: str, message: str):
         for line in f:  # Iterate through each line of the file
             if message in line:  # If the message is in the line
                 o.write(line)
+    return count
 
 
 def count_occurrences(file: str):
@@ -33,7 +34,7 @@ def count_occurrences(file: str):
 
 def cause_code_occurrences(file: str):
     #  Pattern to find cause codes
-    pattern = r"\b[2-5]{1,3}\b"
+    pattern = r"\b=([0-5]{3})\b"
     cause_code_re = re.compile(pattern)  #  Regular expression
 
     with open(file) as f:
@@ -47,3 +48,28 @@ def cause_code_occurrences(file: str):
 
     for code, count in counted_cause_codes.most_common():
         print(f"{code}: {count}")
+
+
+def log_rotate(alerts_log: str):
+    current_path = "./logs/"  # The path where the alerts file resides
+    current_files = os.listdir(current_path)  # Makes the directory as list
+    for file in current_files:  # Iterate through the list
+        if os.path.exists(alerts_log):  # If the file is there
+            # Create a new file and copy the contents of current into the new
+            with open(f"{alerts_log}.1", "w") as outfile, open(alerts_log) as infile:
+                outfile.write(infile.read())
+    # Create a new empty alerts.log
+    with open("./logs/alerts.log", "w"):
+        pass
+
+
+def disk_space():
+    total = shutil.disk_usage("/").total  # Total amount of disk space
+    free = shutil.disk_usage("/").free  # Free amount if disk space
+
+    free_percent = int((free/total) * 100)  # Percentage of diskspace free
+
+    if free_percent < 20:
+        print("ALERT: Low disk space")
+    else:
+        print(f"Disk Free: {free_percent}%")
