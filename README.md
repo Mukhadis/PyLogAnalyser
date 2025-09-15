@@ -21,7 +21,7 @@ This project simulates real-world tasks a Systems Engineer or DevOps Engineer wo
 ✅ Disk space monitoring with low-space alerts
 ✅ Generate daily reports with key metrics
 
-,,,
+```
 log-sentinel/
 │
 ├── logs/
@@ -34,7 +34,22 @@ log-sentinel/
 ├── utils.py # Helper functions
 ├── README.md # Documentation
 └── requirements.txt # Dependencies
-,,,
+```
+
+## 📊 Example Output
+
+```
+Error Summary:
+DiskFull: 5
+NetworkDown: 2
+
+HTTP Status Codes:
+200: 1342
+404: 56
+500: 12
+
+Disk Free: 72%
+```
 
 ## Why This Project?
 
@@ -43,3 +58,7 @@ This project simulates real-world tasks a Systems Engineer performs:
 - Log parsing
 - Data analysis
 - Automation of maintenance tasks
+
+👤 Mukhadis Yaru – Aspiring Cloud/ DevOps Engineer
+
+LinkedIn: https://www.linkedin.com/in/mukhadis-yaru/
