@@ -1,0 +1,17 @@
+2025-09-12 09:58:33 INFO UserLogin user=alice ip=192.168.1.10
+2025-09-12 09:59:01 INFO FileUpload user=alice file=/uploads/report.pdf status=200
+2025-09-12 09:59:45 WARNING DiskSpaceLow mount=/var/log free=12%
+2025-09-12 10:00:01 ERROR DiskFull Could not write to /var/tmp
+2025-09-12 10:00:22 INFO UserLogin user=bob ip=192.168.1.11
+2025-09-12 10:01:12 ERROR NetworkDown Connection lost to 10.0.0.5
+2025-09-12 10:01:45 WARNING HighMemoryUsage process=java pid=3421 usage=92%
+2025-09-12 10:02:17 INFO FileDownload user=bob file=/downloads/setup.exe status=200
+2025-09-12 10:02:42 ERROR DiskFull Could not write to /var/log
+2025-09-12 10:03:12 INFO UserLogin user=carol ip=192.168.1.15
+2025-09-12 10:03:45 ERROR AuthFailure user=carol ip=192.168.1.15
+2025-09-12 10:04:10 INFO FileUpload user=carol file=/uploads/image.png status=404
+2025-09-12 10:05:27 INFO UserLogout user=alice
+2025-09-12 10:05:55 ERROR Timeout Request to api.service.com failed
+2025-09-12 10:06:12 INFO FileDownload user=carol file=/downloads/manual.pdf status=500
+2025-09-12 10:06:48 WARNING DiskSpaceLow mount=/var free=18%
+2025-09-12 10:07:01 INFO ServiceRestart service=nginx status=ok

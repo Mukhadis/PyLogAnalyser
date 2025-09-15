@@ -1,0 +1,45 @@
+# 🛡️ Log Sentinel
+
+A Python-powered log monitoring & automation tool for modern systems engineer
+
+## 🌟 Overview
+
+Log Sentinel is a lightweight system utility designed to help engineers:
+
+- Parse logs for errors & warnings
+- Summarize patterns (top errors, HTTP status codes)
+- Automate log rotation & maintenance
+- Monitor disk space with alerts
+- Generate daily health reports
+
+This project simulates real-world tasks a Systems Engineer or DevOps Engineer would perform daily — and demonstrates scripting, troubleshooting, and automation skills.
+
+⚡ Features
+✅ Extract ERROR & WARNING logs from server files
+✅ Summarize top error types and HTTP status codes
+✅ Automatic log rotation (alerts.log → alerts.log.1)
+✅ Disk space monitoring with low-space alerts
+✅ Generate daily reports with key metrics
+
+,,,
+log-sentinel/
+│
+├── logs/
+│ └── server.log # Sample log file for testing
+│
+├── reports/
+│ └── daily_report.txt # Generated daily reports
+│
+├── log_sentinel.py # Main script
+├── utils.py # Helper functions
+├── README.md # Documentation
+└── requirements.txt # Dependencies
+,,,
+
+## Why This Project?
+
+This project simulates real-world tasks a Systems Engineer performs:
+
+- Log parsing
+- Data analysis
+- Automation of maintenance tasks
