@@ -13,7 +13,8 @@ Log Sentinel is a lightweight system utility designed to help engineers:
 
 This project simulates real-world tasks a Systems Engineer or DevOps Engineer would perform daily — and demonstrates scripting, troubleshooting, and automation skills.
 
-⚡ Features
+## ⚡ Features
+
 ✅ Extract ERROR & WARNING logs from server files
 ✅ Summarize top error types and HTTP status codes
 ✅ Automatic log rotation (alerts.log → alerts.log.1)
